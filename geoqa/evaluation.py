@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 
 from geoqa.utils import logical_form_to_str
 
-def evaluate_predictions(dataset, name, prediction_function, execute_function,
+def evaluate_predictions(dataset, name, execute_function, prediction_function,
                          loss_function=None, display_predictions_frequency=None,
                          logical_form_output_file=None, denotation_output_file=None):
   denotation_matches = []
