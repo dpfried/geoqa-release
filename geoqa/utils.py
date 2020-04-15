@@ -22,6 +22,10 @@ class Stack(_Stack):
     def __contains__(self, item):
         return item in self.tolist()
 
+    def __iter__(self):
+        items = self.tolist()
+        return items.__iter__()
+
     def __repr__(self):
         return '{}'.format(self.tolist())
 
