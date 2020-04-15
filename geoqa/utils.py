@@ -19,6 +19,9 @@ class Stack(_Stack):
         else:
             return Stack(top, rest, rest.size + 1)
 
+    def __contains__(self, item):
+        return item in self.tolist()
+
     def __repr__(self):
         return '{}'.format(self.tolist())
 
